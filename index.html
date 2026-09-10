@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eureka – Handcrafted Genuine Leather Footwear</title>
+    <meta name="description" content="Handcrafted Genuine Leather Footwear store with comprehensive EUREKA Admin ERP, SEO Management, Website Health Sentinel, Domain & Hosting Command Center, and Recovery System." />
+    <meta property="og:title" content="eureka – Handcrafted Genuine Leather Footwear" />
+    <meta property="og:description" content="Handcrafted Genuine Leather Footwear store with comprehensive EUREKA Admin ERP, SEO Management, Website Health Sentinel, Domain & Hosting Command Center, and Recovery System." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="/eureka-logo.png" />
+    <link rel="apple-touch-icon" href="/eureka-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <script>
+      window.addEventListener('error', function(e) {
+        console.error('GLOBAL_WINDOW_ERROR:', e.error || e.message);
+        var errInfo = {
+          message: e.message || (e.error && e.error.message),
+          stack: e.error ? e.error.stack : null,
+          filename: e.filename,
+          lineno: e.lineno,
+          colno: e.colno
+        };
+        try {
+          fetch('/api/client-error', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(errInfo)
+          });
+        } catch(_) {}
+      });
+      window.addEventListener('unhandledrejection', function(e) {
+        console.error('GLOBAL_PROMISE_REJECTION:', e.reason);
+        try {
+          fetch('/api/client-error', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              message: 'UnhandledRejection: ' + (e.reason ? (e.reason.message || e.reason) : 'unknown'),
+              stack: e.reason && e.reason.stack ? e.reason.stack : null
+            })
+          });
+        } catch(_) {}
+      });
+    </script>
+  </head>
+  <body class="bg-[#ffffff] text-[#282828] font-sans antialiased selection:bg-[#b71218] selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

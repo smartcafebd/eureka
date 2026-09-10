@@ -1,0 +1,246 @@
+import { Category, SlideItem, Testimonial, HeroDesignConfig, PromoBanner } from '../types';
+
+export const CATEGORIES: Category[] = [
+  {
+    id: 'cat-sandal',
+    name: 'Sandal',
+    slug: 'sandal',
+    image: 'https://images.unsplash.com/photo-1603808033192-082d6919d3e1?auto=format&fit=crop&w=1000&q=85',
+    featured: true
+  },
+  {
+    id: 'cat-loafer',
+    name: 'Loafer',
+    slug: 'loafer',
+    image: 'https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&fit=crop&w=1000&q=85',
+    featured: true
+  },
+  {
+    id: 'cat-formal',
+    name: 'Formal Shoes',
+    slug: 'formal-shoes',
+    image: 'https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=1000&q=85',
+    featured: true
+  },
+  {
+    id: 'cat-casual',
+    name: 'Casual Shoes',
+    slug: 'casual-shoes',
+    image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1000&q=85',
+    featured: true
+  }
+];
+
+export const HERO_SLIDES: SlideItem[] = [
+  {
+    id: 'slide-1',
+    tag: 'HANDCRAFTED GENUINE LEATHER',
+    title: 'Supreme Comfort & Timeless Elegance',
+    subtitle: 'Discover our flagship Clarks cycle shoes and classic penny loafers built with pure Bangladeshi leather.',
+    highlightText: '100% Pure Cowhide Leather Craft',
+    discountBadge: 'UP TO 45% OFF',
+    buttonText: 'SHOP MEN COLLECTION',
+    link: '#featured-section',
+    bgGradient: 'from-[#1c1c1c] via-[#2a1717] to-[#121212]',
+    image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1200&q=85'
+  },
+  {
+    id: 'slide-2',
+    tag: 'EXCLUSIVE HOT DEALS 2026',
+    title: 'Clark Cycle Shoes In Dark Chocolate & Red',
+    subtitle: 'Engineered for all-day urban commute with shock absorbing off-white sole and full grain leather upper.',
+    highlightText: 'Special Price: 2,450 ৳ (Was 4,150 ৳)',
+    discountBadge: 'HOT DEAL -41%',
+    buttonText: 'ORDER NOW',
+    link: '#hot-deals',
+    bgGradient: 'from-[#231515] via-[#3a1a1a] to-[#1a1212]',
+    image: 'https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=1200&q=85'
+  },
+  {
+    id: 'slide-3',
+    tag: 'NEW ARRIVAL EXECUTIVE SUITE',
+    title: 'Italian-Inspired Luxury Loafers & Boots',
+    subtitle: 'From boardroom meetings to casual evenings, elevate your presence with our masterfully polished shoes.',
+    highlightText: 'Free Delivery Inside Dhaka on 5000৳+',
+    discountBadge: 'PREMIUM LINE',
+    buttonText: 'EXPLORE LOAFERS',
+    link: '#categories',
+    bgGradient: 'from-[#171c23] via-[#201d24] to-[#141416]',
+    image: 'https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&fit=crop&w=1200&q=85'
+  }
+];
+
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    id: 't-1',
+    author: 'তানভীর আহমেদ',
+    location: 'উত্তরা সেক্টর ৭, ঢাকা',
+    rating: 5,
+    date: '২ দিন আগে',
+    verified: true,
+    productName: 'Clark Cycle Shoes Dark Chocolate',
+    sizeBought: 42,
+    colorBought: 'ডার্ক চকলেট',
+    comment: 'অফিসে প্রতিদিন পরার জন্য এক কথায় অসাধারণ জুতো! চামড়া এতটাই নরম যে প্রথম দিন থেকেই পায়ে কোনো ফোস্কা বা চাপ পড়েনি। ঢাকার ভেতরে মাত্র ২৪ ঘণ্টার মধ্যে ডেলিভারি পেয়েছি। এই বাজেটে এমন অরিজিনাল কাউহাইড লেদার সত্যিই পাওয়া মুশকিল। ইউরেকাকে ধন্যবাদ!',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80',
+    photos: [
+      'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=400&q=80',
+    ],
+    helpfulCount: 38,
+    categoryTag: 'casual',
+  },
+  {
+    id: 't-2',
+    author: 'ইঞ্জি. সাজ্জাদুল ইসলাম',
+    location: 'ধানমন্ডি, ঢাকা',
+    rating: 5,
+    date: '৪ দিন আগে',
+    verified: true,
+    productName: 'Premium Leather Classic Penny Loafer',
+    sizeBought: 41,
+    colorBought: 'চকলেট ব্রাউন',
+    comment: 'আমি সাধারণত ইমপোর্টেড ব্যান্ডের জুতো ব্যবহার করি। তবে ইউরেকার ফিনিশিং ও হ্যান্ডমেড সেলাই দেখে মুগ্ধ হয়েছি। বিশেষ করে ইনসোলের মেমোরি ফোম কুশন সারাদিন টানা পরে থাকলেও পা একটুও ক্লান্ত হয় না। প্যাকেজিংটা খুবই প্রিমিয়াম ছিল, সাথে ডাস্টব্যাগও পেয়েছি।',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80',
+    photos: [
+      'https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&fit=crop&w=400&q=80',
+    ],
+    helpfulCount: 29,
+    categoryTag: 'loafer',
+  },
+  {
+    id: 't-3',
+    author: 'ফারহান তানজিম',
+    location: 'আগ্রাবাদ সি/এ, চট্টগ্রাম',
+    rating: 5,
+    date: '১ সপ্তাহ আগে',
+    verified: true,
+    productName: 'Executive Derby Cap-Toe Formal Shoes',
+    sizeBought: 43,
+    colorBought: 'ক্লাসিক ব্ল্যাক',
+    comment: 'ডেলিভারি ম্যানের সামনে প্যাকেট খুলে জুতো পায়ে দিয়ে চেক করে ক্যাশ অন ডেলিভারিতে পেমেন্ট করেছি। জুতার গ্রিপ ও লেদারের ন্যাচারাল শাইন অসাধারণ। চট্টগ্রাম শহরে অর্ডার দেওয়ার মাত্র ২ দিনের মাথায় হাতে পেয়েছি। ১০০% খাঁটি চামড়ার পণ্য।',
+    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80',
+    photos: [
+      'https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=400&q=80',
+    ],
+    helpfulCount: 44,
+    categoryTag: 'formal',
+  },
+  {
+    id: 't-4',
+    author: 'ডা. মাহফুজুর রহমান',
+    location: 'উপশহর, সিলেট',
+    rating: 5,
+    date: '১ সপ্তাহ আগে',
+    verified: true,
+    productName: 'Ultra Comfort Handcrafted Tassel Loafer',
+    sizeBought: 42,
+    colorBought: 'কনিয়াক ট্যান',
+    comment: 'প্রথমে সাইজ নিয়ে দ্বিধায় ছিলাম। ইউরেকার হোয়াটসঅ্যাপ কাস্টমার কেয়ারে যোগাযোগ করার সাথে সাথে খুব সুন্দরভাবে সাইজ মেপে সমাধান করে দিয়েছে। ৪২ সাইজ একদম নিখুঁত ফিট হয়েছে। হাসপাতালে রাউন্ড দেওয়ার সময় পায়ে দারুণ আরাম পাই।',
+    avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80',
+    photos: [
+      'https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=400&q=80',
+    ],
+    helpfulCount: 22,
+    categoryTag: 'loafer',
+  },
+  {
+    id: 't-5',
+    author: 'নুসরাত জাহান চৌধুরী',
+    location: 'জিইসি মোড়, চট্টগ্রাম',
+    rating: 5,
+    date: '২ সপ্তাহ আগে',
+    verified: true,
+    productName: 'Clarks Genuine Leather Cycle Shoes Light Red',
+    sizeBought: 39,
+    colorBought: 'লাইট রেড',
+    comment: 'কালারটা ছবির থেকেও বাস্তবে অনেক বেশি আকর্ষণীয় ও মার্জিত। সেলাই এবং রাবার সোলের কোয়ালিটি টপ নচ। হালকা ওজনে হাঁটার সময় খুবই ভালো সাপোর্ট দেয়। বান্ধবীদেরও রেকমেন্ড করেছি!',
+    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80',
+    photos: [
+      'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=400&q=80',
+    ],
+    helpfulCount: 31,
+    categoryTag: 'casual',
+  },
+  {
+    id: 't-6',
+    author: 'রাকিবুল হাসান সুমন',
+    location: 'মিরপুর ডিওএইচএস, ঢাকা',
+    rating: 5,
+    date: '২ সপ্তাহ আগে',
+    verified: true,
+    productName: 'Imperial Plain Luxury Formal Shoes',
+    sizeBought: 42,
+    colorBought: 'ডিপ চকলেট',
+    comment: 'আমার দ্বিতীয় পারচেজ এটি। প্রথমটা ব্যবহারের ১ বছর পরও চামড়ায় কোনো ভাঁজ বা ক্র্যাক পড়েনি। এই জন্য আবারো ফর্মাল অক্সফোর্ডটা নিলাম। বাংলাদেশের স্থানীয় কারিগরদের এমন নিপুণ হাতের কাজ দেখে গর্ববোধ হয়।',
+    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&q=80',
+    helpfulCount: 19,
+    categoryTag: 'formal',
+  },
+  {
+    id: 't-7',
+    author: 'মেহরাব হোসেন রাসেল',
+    location: 'বোয়ালিয়া, রাজশাহী',
+    rating: 5,
+    date: '৩ সপ্তাহ আগে',
+    verified: true,
+    productName: 'Handmade Cross-Strap Leather Sandal',
+    sizeBought: 41,
+    colorBought: 'ন্যাচারাল ব্রাউন',
+    comment: 'গরমে প্রতিদিন ব্যবহারের জন্য অসম্ভব আরামদায়ক স্যান্ডেল। তলার কুশনিং খুব নরম এবং পা ঘামে না। রাজশাহীতে ৩ দিনে সুন্দর বক্স প্যাকেজিংসহ পেয়েছি। ১০০% অরিজিনাল লেদার!',
+    avatar: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=150&q=80',
+    helpfulCount: 16,
+    categoryTag: 'casual',
+  },
+  {
+    id: 't-8',
+    author: 'আরিফুর রহমান চৌধুরী',
+    location: 'সোনাডাঙ্গা, খুলনা',
+    rating: 5,
+    date: '১ মাস আগে',
+    verified: true,
+    productName: 'Italian Hand-Polished Horsebit Loafer',
+    sizeBought: 42,
+    colorBought: 'চকলেট',
+    comment: 'ইউরেকার হর্সবিট মেটাল বাকল এবং হ্যান্ড-পলিশের গ্লেজ পুরো প্রিমিয়াম ইতালিয়ান লুক দেয়। জিন্স এবং ট্রাউজার দুটোর সাথেই দারুণ মানিয়ে যায়। সাইজ নিয়ে কোনো সমস্যা হয়নি, একদম পারফেক্ট।',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80',
+    helpfulCount: 25,
+    categoryTag: 'loafer',
+  }
+];
+
+export const DEFAULT_HERO_DESIGN: HeroDesignConfig = {
+  layoutStyle: 'split',
+  overlayOpacity: 75,
+  bannerHeight: 'standard',
+  autoSlideInterval: 6,
+  showBadges: true,
+  showPreviewCard: true,
+  accentColor: '#d97706',
+};
+
+export const DEFAULT_PROMO_BANNERS: PromoBanner[] = [
+  {
+    id: 'promo-1',
+    tag: 'HANDCRAFTED HERITAGE',
+    title: 'ইতালিয়ান স্টাইল লেদার এভরিডে জুতা',
+    subtitle: 'প্রিমিয়াম কাউহাইড লেদার ও শক-অ্যাবজরবিং সোলে তৈরি সারাদিনের আরামদায়ক কালেকশন।',
+    badgeText: 'হট ডিল কালেকশন',
+    buttonText: 'কালেকশন দেখুন',
+    linkCategory: 'men',
+    bgImage: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1000&q=80',
+    enabled: true,
+    actionType: 'category',
+  },
+  {
+    id: 'promo-2',
+    tag: 'EUREKA LIFETIME GUARANTEE',
+    title: '১ বছরের রিপ্লেসমেন্ট গ্যারান্টি ও ফ্রি সাইজ এক্সচেঞ্জ',
+    subtitle: 'সারা বাংলাদেশে হোম ডেলিভারি ও দ্রুততম ট্র্যাকিং সাপোর্ট সহ সরাসরি অর্ডার করুন।',
+    badgeText: '১০০% স্যাটিসফ্যাকশন',
+    buttonText: 'ওয়ারেন্টি শর্তাবলী দেখুন',
+    linkCategory: 'formal',
+    bgImage: 'https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=1000&q=80',
+    enabled: true,
+    actionType: 'happiness',
+  },
+];
