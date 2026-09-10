@@ -25,24 +25,28 @@
           colno: e.colno
         };
         try {
-          fetch('/api/client-error', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(errInfo)
-          });
+          if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+            fetch('/api/client-error', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(errInfo)
+            });
+          }
         } catch(_) {}
       });
       window.addEventListener('unhandledrejection', function(e) {
         console.error('GLOBAL_PROMISE_REJECTION:', e.reason);
         try {
-          fetch('/api/client-error', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              message: 'UnhandledRejection: ' + (e.reason ? (e.reason.message || e.reason) : 'unknown'),
-              stack: e.reason && e.reason.stack ? e.reason.stack : null
-            })
-          });
+          if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+            fetch('/api/client-error', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                message: 'UnhandledRejection: ' + (e.reason ? (e.reason.message || e.reason) : 'unknown'),
+                stack: e.reason && e.reason.stack ? e.reason.stack : null
+              })
+            });
+          }
         } catch(_) {}
       });
     </script>
